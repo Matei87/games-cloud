@@ -1,0 +1,60 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: $second-gray;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: $second-gold;
+  border: 7px solid transparent;
+  // background-clip: content-box;
+}
+
+html {
+  font-size: 10px !important;
+  scrollbar-width: thin;
+  scroll-behavior: smooth;
+  scrollbar-color: $second-gold $second-gray;
+  //scrollbar-color: $second-gold #1b242f;
+}
+body {
+  /* background: #192442; */
+  /* background: var(--background) !important; */
+  /* background: #d9d9d9; */
+  background: rgba($black, 0.2) !important;
+  color: $gold !important;
+  font-family: 'Maven Pro', sans-serif !important;
+  line-height: 1.6 !important;
+}
+
+li {
+  list-style-type: none;
+}
+
+a:hover {
+  text-decoration: none !important;
+}
+a {
+  text-decoration: none !important;
+}
+button:focus {
+  outline: none !important;
+}
+
+#sidebar {
+  text-align: center;
+  overflow: hidden;
+}
+
+*::selection {
+  color: $white;
+  background: $red;
+}

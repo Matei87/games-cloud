@@ -1,0 +1,154 @@
+.bm-burger-button {
+  position: fixed;
+  z-index: 1030 !important;
+  width: 3rem;
+  height: 2.5rem;
+  left: 20%;
+  top: 3rem;
+
+  .bm-burger-bars {
+    background: $gold;
+  }
+
+  .bm-burger-bars-hover {
+    transition: all 0.4s linear;
+    background: $second-gold;
+  }
+}
+
+/* Styling of overlay */
+.bm-overlay {
+  top: 69px !important;
+}
+
+/*
+      Sidebar wrapper styles
+      Note: Beware of modifying this element as it can break the animations - you should not need to touch it in most cases
+      */
+.bm-menu-wrap {
+  top: 78px;
+  bottom: 0;
+  overflow: unset !important;
+  height: unset !important;
+
+  /* General sidebar styles */
+  .bm-menu {
+    overflow: unset !important;
+    background: $second-black;
+    padding: 0;
+    font-size: 1.5rem;
+    margin-bottom: 3rem;
+  }
+
+  /* Morph shape necessary with bubble or elastic */
+  .bm-morph-shape {
+    fill: $second-gray;
+  }
+
+  /* Wrapper for item list */
+  .bm-item-list {
+    padding: 4rem 2.5rem 0;
+    overflow-y: scroll !important;
+
+    scrollbar-width: thin;
+    scrollbar-color: $second-gold $second-gray;
+
+    &::-webkit-scrollbar {
+      width: 6px;
+      height: 30px;
+      background-color: $second-gold;
+    }
+
+    &::-webkit-scrollbar-track {
+      background-color: $second-gray;
+      height: 30px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      height: 30px;
+      background-color: $second-gold;
+    }
+  }
+
+  /* Individual item */
+  .bm-item {
+    display: inline-block;
+
+    p {
+      font-size: 2.8rem;
+      font-weight: 700;
+      margin: 0;
+      color: $white;
+    }
+
+    li {
+      display: flex;
+      align-items: center;
+      margin-bottom: 0.5rem;
+
+      span {
+        padding: 0.5rem;
+        background: rgba($white, 0.1);
+        border-radius: 0.25rem;
+        margin-right: 0.5rem;
+
+        svg {
+          fill: $white;
+          font-size: 2rem;
+          font-weight: 500;
+
+          path {
+            stroke: $white;
+          }
+        }
+      }
+
+      a {
+        font-size: 1.8rem;
+        color: $gold;
+        font-weight: 500;
+
+        &:hover {
+          transition: all 0.4s linear;
+          color: $second-gold !important;
+        }
+      }
+
+      &.selected {
+        span {
+          background: rgba($white, 0.9);
+
+          svg {
+            fill: $black;
+
+            path {
+              stroke: $black;
+            }
+          }
+        }
+
+        a {
+          color: $white;
+
+          &:hover {
+            color: $white !important;
+          }
+        }
+      }
+    }
+
+    &:focus {
+      outline: none !important;
+    }
+  }
+
+  /* Position and sizing of clickable cross button */
+  .bm-cross-button {
+    right: 22px !important;
+
+    /* Color/shape of close button cross */
+    .bm-cross {
+      background: $gold;
+    }
+  }
+}

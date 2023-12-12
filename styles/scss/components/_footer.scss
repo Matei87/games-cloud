@@ -1,0 +1,18 @@
+footer {
+  background-color: $second-black;
+  height: 8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  p {
+    font-size: 1.8rem;
+    color: $third-gray;
+    font-weight: 500;
+    margin: 0;
+
+    span {
+      color: $gold;
+    }
+  }
+}

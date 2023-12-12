@@ -1,0 +1,271 @@
+#content {
+  margin: 12rem 0 3rem;
+
+  .container {
+    display: block;
+
+    .pagination {
+      margin: 3rem 0;
+      display: flex;
+      justify-content: center;
+
+      li {
+        font-weight: 600 !important;
+
+        a {
+          background: $second-black;
+          color: $gold;
+        }
+
+        &:hover,
+        button:hover {
+          border-color: $white;
+        }
+      }
+
+      .ant-pagination-options {
+        display: none !important;
+      }
+    }
+
+    .gamesDetails {
+      text-align: left;
+      color: #373a47;
+      margin-bottom: 5rem;
+
+      .title {
+        font-size: 6rem;
+        margin-bottom: 0;
+        font-weight: 600;
+      }
+
+      h1 {
+        font-size: 1.75rem;
+        font-weight: 500;
+        margin-bottom: 0;
+      }
+    }
+
+    .main-wrapper {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      flex-direction: column;
+      grid-gap: 1rem;
+
+      .wrapper {
+        border: none;
+        position: relative;
+        height: 37rem;
+        overflow: hidden;
+
+        .header {
+          position: relative;
+          padding: 0;
+          height: 31rem;
+
+          span {
+            height: inherit !important;
+
+            img {
+              height: inherit !important;
+              width: inherit !important;
+            }
+          }
+
+          img {
+            height: inherit !important;
+            width: inherit !important;
+          }
+
+          &::after {
+            content: '';
+            display: block;
+            position: absolute;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(180deg, transparent, $black);
+          }
+        }
+
+        .body {
+          padding: 2rem;
+          width: 100%;
+          position: absolute;
+          bottom: 10%;
+          display: flex;
+          align-items: center;
+
+          .platforms {
+            display: flex;
+            align-items: center;
+
+            svg {
+              font-size: 1.8rem;
+              fill: $white;
+              margin: 5px;
+
+              &:first-of-type {
+                margin-left: 0;
+              }
+            }
+
+            .wii {
+              width: 25px;
+              height: 25px;
+            }
+
+            .wiiu {
+              width: 32px;
+              height: 32px;
+
+              path {
+                width: 32px;
+                height: 32px;
+              }
+            }
+
+            .psvita {
+              width: 35px;
+              height: 35px;
+            }
+
+            .platformLength {
+              color: $white;
+              font-size: 1.5rem;
+            }
+          }
+
+          .metacritic {
+            margin-left: auto;
+            padding: 1px 4px;
+            font-weight: 600;
+            font-size: 1.4rem;
+
+            &.yellow {
+              color: $white;
+              border: 1px solid $white;
+            }
+
+            &.green {
+              color: $gold;
+              border: 1px solid $gold;
+            }
+          }
+        }
+
+        .footer {
+          color: $white;
+          background: $black;
+          z-index: 1;
+          width: 100%;
+          height: 6rem;
+          padding: 0.5rem 2rem;
+          display: flex;
+          justify-content: left;
+          align-items: center;
+
+          span {
+            font-weight: 700;
+            font-size: 1.8rem;
+            text-align: left;
+
+            img {
+              object-fit: contain;
+              position: relative;
+              left: 5px;
+              bottom: 5px;
+            }
+          }
+        }
+
+        .overlay {
+          color: $white;
+          position: absolute;
+          left: 0;
+          right: 0;
+          top: -8%;
+          background: rgba($black, 0.5);
+          width: 100%;
+          height: 0;
+          transition: all 0.3s linear;
+
+          .overlay-content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            display: flex;
+            justify-content: space-evenly;
+            align-content: center;
+            transform: translate(-50%, -50%);
+            font-size: 1.6rem;
+            width: 100%;
+
+            .overlay-content-details {
+              display: flex;
+              justify-content: center;
+              align-content: center;
+              margin: 0 !important;
+              color: $background;
+              border: 2px solid $white;
+              padding: 8px 14px;
+              transition: all 0.2s linear;
+              font-weight: 600;
+              background-color: $white;
+
+              &:hover {
+                background: $gold;
+                color: $white;
+                border: 2px solid $gold;
+              }
+            }
+
+            .overlay-content-favorite {
+              display: flex;
+              justify-content: center;
+              align-self: center;
+              border: 2px solid $white;
+              border-radius: 50%;
+              padding: 10px;
+
+              &:hover {
+                background: $white;
+              }
+              &:hover svg {
+                fill: $gold;
+              }
+            }
+          }
+        }
+
+        &:hover .overlay {
+          height: 108%;
+        }
+      }
+    }
+  }
+}
+
+/* Extra small devices */
+@media (max-width: 575.98px) {
+  #pagination {
+    overflow: hidden !important;
+  }
+}
+
+/* Small devices */
+@media (min-width: 576px) and (max-width: 767.98px) {
+}
+
+/* Medium devices */
+@media (min-width: 768px) and (max-width: 991.98px) {
+}
+
+/* Large devices */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+}
+
+/* Extra large devices */
+@media (min-width: 1200px) {
+}

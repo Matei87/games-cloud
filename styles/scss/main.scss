@@ -1,0 +1,16 @@
+// Variables
+@import './variables/colors';
+
+// Base
+@import './base/typography';
+
+// Components
+@import './components/loader';
+@import './components/navbar';
+@import './components/sideMenu';
+@import './components/footer';
+@import './components/platforms';
+
+// Pages
+@import './pages/details';
+@import './pages/index';
