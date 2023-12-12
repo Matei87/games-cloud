@@ -1,10 +1,7 @@
 'use client';
-import React from 'react';
-
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { push as Menu } from 'react-burger-menu';
-
 import {
   FaXbox,
   FaUserAlt,
@@ -180,7 +177,7 @@ const SideMenu = (props) => {
           <span>
             <SiNintendoswitch />
           </span>
-          <Link href='/Platforms/nintendoswitch'>Nintendo Switch</Link>
+          <Link href='/Platforms/nintendo-switch'>Nintendo Switch</Link>
         </li>
         <li className={router.asPath === '/Platforms/ios' ? 'selected' : ''}>
           <span>

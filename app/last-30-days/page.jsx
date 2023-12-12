@@ -1,11 +1,11 @@
 'use client';
 import { useEffect } from 'react';
 
-import { useAppSelector, useAppDispatch } from 'store/hooks';
-import { selectBestOfTheYearPage } from 'store/bestOfTheYear/selectors';
-import { useGetLast30DaysQuery } from 'store/api/baseApi';
-import { clearState } from 'store/bestOfTheYear/reducer';
-import TopComponent from 'components/shared/TopComponent';
+import { useAppSelector, useAppDispatch } from '@/store/hooks';
+import { selectBestOfTheYearPage } from '@/store/bestOfTheYear/selectors';
+import { useGetLast30DaysQuery } from '@/store/api/baseApi';
+import { clearState } from '@/store/bestOfTheYear/reducer';
+import TopComponent from '@/components/shared/TopComponent';
 
 const Last30Days = () => {
   const dispatch = useAppDispatch();

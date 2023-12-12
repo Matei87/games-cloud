@@ -1,10 +1,10 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import parse from 'html-react-parser';
-import { useAppDispatch } from 'store/hooks';
-import { setPagination } from 'store/bestOfTheYear/reducer';
+import { useAppDispatch } from '@/store/hooks';
+import { setPagination } from '@/store/bestOfTheYear/reducer';
 import { Pagination } from 'antd';
-import Loader from '../../components/Loader/Loader';
+import Loader from '@/components/Loader/Loader';
 import { getPlatforms, setRating } from '@/components/shared/utils';
 import { AiFillHeart } from 'react-icons/ai';
 import NoData from '../../public/images/file-not-found.png';
@@ -16,10 +16,12 @@ const GamesPlatform = ({ data, error, isLoading, title, description }) => {
   return (
     <div id='content' className='main-page'>
       <div className='container'>
-        <div className='gamesDetails'>
-          <h1 className='title'>Games for {title}</h1>
-          <h1>{description && parse(`${description}`)}</h1>
-        </div>
+        {!isLoading && (
+          <div className='gamesDetails'>
+            <h1 className='title'>Games for {title}</h1>
+            <h1>{description && parse(`${description}`)}</h1>
+          </div>
+        )}
 
         <div>
           {!isLoading && data?.results.length === 0 && (

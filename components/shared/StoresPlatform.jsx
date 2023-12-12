@@ -1,9 +1,9 @@
 'use client';
 import Image from 'next/image';
 import { Pagination } from 'antd';
-import { useAppDispatch } from 'store/hooks';
-import { setPagination } from 'store/bestOfTheYear/reducer';
-import Loader from 'components/Loader/Loader';
+import { useAppDispatch } from '@/store/hooks';
+import { setPagination } from '@/store/bestOfTheYear/reducer';
+import Loader from '@/components/Loader/Loader';
 import NoData from '../../public/images/file-not-found.png';
 import ContainerWrapper from './ContainerWrapper';
 

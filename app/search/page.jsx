@@ -1,10 +1,8 @@
-'use client';
-import React from 'react';
-
+// 'use client';
+import Link from 'next/link';
 import Web from '../../public/images/web.svg';
 // import GamesContext from '@/context/GamesContext';
-import Loader from '../../components/Loader/Loader';
-
+import Loader from '@/components/Loader/Loader';
 import { FaXbox, FaPlaystation, FaLinux } from 'react-icons/fa';
 import {
   AiFillWindows,
@@ -21,14 +19,12 @@ import {
   SiSega,
 } from 'react-icons/si';
 import { MdPhoneAndroid } from 'react-icons/md';
-
 import Exceptional from '../../public/images/exceptional.png';
 import Recommended from '../../public/images/recommended.png';
 import Meh from '../../public/images/meh.png';
 import Skip from '../../public/images/skip.png';
 
 import { connect } from 'react-redux';
-import Link from 'next/link';
 
 const Search = ({ searchResults, isSearchLoaded }) => {
   //const { searchResults, isLoaded } = useContext(GamesContext);

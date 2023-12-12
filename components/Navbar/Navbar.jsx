@@ -3,12 +3,11 @@ import { useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { useRouter } from 'next/navigation';
-
 import { AiOutlineSearch } from 'react-icons/ai';
 import { BiUserCircle } from 'react-icons/bi';
 import { ImHome } from 'react-icons/im';
 // import { searchAction } from '../../redux/actions/actions';
-import { connect } from 'react-redux';
+// import { connect } from 'react-redux';
 
 const Navbar = ({ getData }) => {
   const [data, setData] = useState('');

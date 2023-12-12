@@ -1,6 +1,6 @@
 'use client';
-import { useAppDispatch } from 'store/hooks';
-import { setPagination } from 'store/bestOfTheYear/reducer';
+import { useAppDispatch } from '@/store/hooks';
+import { setPagination } from '@/store/bestOfTheYear/reducer';
 import { Pagination } from 'antd';
 import Image from 'next/image';
 import Link from 'next/link';

@@ -1,15 +1,14 @@
 'use client';
 import { useEffect } from 'react';
-
 import Image from 'next/image';
 import { Pagination } from 'antd';
-import { useAppSelector, useAppDispatch } from 'store/hooks';
-import { selectBestOfTheYearPage } from 'store/bestOfTheYear/selectors';
-import { useGetCollectionsQuery } from 'store/api/baseApi';
-import { clearState, setPagination } from 'store/bestOfTheYear/reducer';
+import { useAppSelector, useAppDispatch } from '@/store/hooks';
+import { selectBestOfTheYearPage } from '@/store/bestOfTheYear/selectors';
+import { useGetCollectionsQuery } from '@/store/api/baseApi';
+import { clearState, setPagination } from '@/store/bestOfTheYear/reducer';
 import { PiGameControllerDuotone } from 'react-icons/pi';
 import { AiOutlineLike } from 'react-icons/ai';
-import Loader from 'components/Loader/Loader';
+import Loader from '@/components/Loader/Loader';
 
 const Collections = () => {
   const dispatch = useAppDispatch();

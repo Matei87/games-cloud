@@ -1,6 +1,5 @@
 'use client';
 import { useEffect } from 'react';
-
 import { useAppSelector, useAppDispatch } from '@/store/hooks';
 import {
   selectBestOfTheYearPage,

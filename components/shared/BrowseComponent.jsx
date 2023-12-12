@@ -2,9 +2,9 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { Pagination } from 'antd';
-import { useAppDispatch } from 'store/hooks';
-import { setPagination } from 'store/bestOfTheYear/reducer';
-import Loader from 'components/Loader/Loader';
+import { useAppDispatch } from '@/store/hooks';
+import { setPagination } from '@/store/bestOfTheYear/reducer';
+import Loader from '@/components/Loader/Loader';
 import { BiUser } from 'react-icons/bi';
 import NoData from '../../public/images/file-not-found.png';
 

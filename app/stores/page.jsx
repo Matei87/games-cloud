@@ -1,10 +1,9 @@
 'use client';
 import { useEffect } from 'react';
-import { useAppSelector, useAppDispatch } from 'store/hooks';
-import { selectBestOfTheYearPage } from 'store/bestOfTheYear/selectors';
-import { useGetStoresQuery } from 'store/api/baseApi';
-import { clearState } from 'store/bestOfTheYear/reducer';
-
+import { useAppSelector, useAppDispatch } from '@/store/hooks';
+import { selectBestOfTheYearPage } from '@/store/bestOfTheYear/selectors';
+import { useGetStoresQuery } from '@/store/api/baseApi';
+import { clearState } from '@/store/bestOfTheYear/reducer';
 import StoresPlatform from '@/components/shared/StoresPlatform';
 
 const Stores = () => {
